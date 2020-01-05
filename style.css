@@ -4,12 +4,18 @@ body {
     text-align: center;
     letter-spacing: 1px;
     margin: 0;
-
 }
 
 
-h1 {
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    max-width: 100%;
+}
 
+
+
+h1 {
     font-size: 120px;
     font-weight: 700;
     color: #ffffff;
@@ -19,7 +25,8 @@ h1 {
     padding-top: 235px;
     margin-top: 0px;
     margin-bottom: 28px;
-
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 h2 {
@@ -27,7 +34,6 @@ h2 {
     color: #2d3950;
     padding-top: 80px;
     font-weight: 400;
-
 }
 
 h3 {
@@ -70,16 +76,14 @@ p {
 }
 
 .bg-light-grey p {
-    padding-left: 7px;
-    padding-right: 12px;
-    padding-top: 1.5px;
     letter-spacing: 0.39px;
     line-height: 1.64;
     text-align: center;
     font-weight: 400;
     font-size: 20px;
-    padding-bottom: 80px;
-
+    padding-right: 20px;
+    padding-left: 20px;
+    display: inline-block;
 }
 
 
@@ -105,6 +109,10 @@ p {
     background-color: rgb(21, 164, 250);
 }
 
+.button:active {
+    transform: scale(0.8);
+}
+
 .logo,
 .bg-light-grey,
 .footer {
@@ -113,6 +121,8 @@ p {
 
 .bg-grey {
     background-image: url(img/bg-grey.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg-grey h2 {
@@ -121,15 +131,24 @@ p {
 
 .bg-grey p {
     color: #929294;
+    margin-bottom: 50px;
+}
+
+p .line {
+    max-width: 100%;
+    display: block;
 }
 
 .line {
     margin-bottom: 6px;
 }
 
+
 .banner-text {
     margin-bottom: 52px;
     color: #f4f4f4;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 a,
@@ -138,47 +157,16 @@ textarea {
     font-size: 16.57;
 }
 
-
-a {
-    color: #fff;
-    text-decoration: none;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    padding: 15px 0;
-    display: block;
-    margin-top: 50px;
-    max-width: 210px;
-    text-align: center;
-}
-
-.form-btn {
-    font-size: 18px;
-    font-family: "Lato";
-    color: rgb(255, 255, 255);
-    line-height: 2.611;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(21, 164, 250);
-    border-radius: 2px;
-    background-color: rgba(21, 164, 250, 0);
-    width: 144px;
-    height: 49px;
-    margin: 0 auto;
-}
-
-.form-btn:hover {
-    background-color: rgb(21, 164, 250);
-}
-
 .form {
-    max-width: 620px;
+    max-width: 548px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 54px;
     margin: auto;
     padding-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .form input,
@@ -195,10 +183,69 @@ a {
     height: 64px;
     margin-bottom: 10px;
     text-align: center;
+}
 
+.form input::placeholder {
+    padding-top: 24px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.form textarea::placeholder {
+    padding-top: 23px;
+    padding-left: 21px;
+    text-align: left;
+}
+
+.form textarea {
+    height: 158px;
 }
 
 
+#subscribe-field {
+    width: 17.5px;
+    height: 17.5px;
+    margin-left: 10px;
+
+}
+
+label {
+    font-size: 15px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    margin-left: 13px;
+}
+
+.form-btn-subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+#form-btn {
+    font-size: 18px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    line-height: 2.611;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(21, 164, 250);
+    border-radius: 2px;
+    background-color: rgba(21, 164, 250, 0);
+    width: 144px;
+    height: 49px;
+}
+
+#form-btn:hover {
+    background-color: rgb(21, 164, 250);
+}
+
+#form-btn:active {
+    transform: scale(0.8);
+}
 
 .logo {
     text-align: left;
@@ -210,33 +257,46 @@ a {
 .banner {
     background-image: url(img/banner.png);
     background-repeat: no-repeat;
-
-
+    background-size: cover;
 }
 
 
 .portfolio {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     border: #2d3950;
 }
 
-.list-portfolio  {
-    margin: 6px 8px;
-}
 
-.list-portfolio:hover {
-    transform: scale(2);
-    
+.portfolio img {
+    width: 100%;
 }
 
 
-.container {
-    width: 1160px;
-    margin: 0 auto;
-
-
+.list-portfolio {
+    position: relative;
+    width: 30%;
+    margin: 13px;
 }
+
+.list-portfolio a {
+    width: 25%;
+}
+
+.list-portfolio a:hover::before {
+    content: url(' ');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/лупа.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(21, 164, 250, 0.5);
+}
+
 
 
 .list-icon p {
@@ -256,18 +316,18 @@ a {
 .bg-white {
     display: flex;
     justify-content: space-between;
-    padding-top: 45px;
+    padding: 45px 20px 58px 20px;
 }
-
 
 .bg-light-grey {
     background-color: #f6f9f9;
+    padding: 1.5px 12px 80px 7px;
+
 }
 
 .footer {
     background-color: #f6f9f9;
     padding: 10px;
-
 }
 
 .footer .container {
@@ -278,15 +338,13 @@ a {
 .social-icon {
     display: flex;
     margin: 0;
-
 }
-
 
 .facebook-icon,
 .twitter-icon,
 .google-icon,
 .linked-icon {
-margin-top: 10px;
+    margin-top: 10px;
 }
 
 .facebook-icon {
@@ -294,11 +352,15 @@ margin-top: 10px;
     background-repeat: no-repeat;
     width: 39px;
     height: 37px;
+}
 
+.facebook-icon:active {
+    transform: scale(0.8);
 }
 
 .facebook-icon:hover {
     background-image: url(img/facebook-click.png);
+    background-repeat: no-repeat;
 }
 
 .twitter-icon {
@@ -306,6 +368,10 @@ margin-top: 10px;
     background-repeat: no-repeat;
     width: 39px;
     height: 37px;
+}
+
+.twitter-icon:active {
+    transform: scale(0.8);
 }
 
 .twitter-icon:hover {
@@ -323,6 +389,10 @@ margin-top: 10px;
     background-image: url(img/Google\ +\ click.png);
 }
 
+.google-icon:active {
+    transform: scale(0.8);
+}
+
 .linked-icon {
     background-image: url(img/Linked\ in.png);
     background-repeat: no-repeat;
@@ -330,8 +400,71 @@ margin-top: 10px;
     height: 37px;
 }
 
+.linked-icon:active {
+    transform: scale(0.8);
+}
+
 .linked-icon:hover {
     background-image: url(img/Linked\ in\ click.png);
 }
 
+
+
+
+@media (max-width: 576px) {
+
+    h1 {
+        font-size: 45px;
+
+    }
+
+    .bg-white h4 {
+        font-size: 14px;
+    }
+
+    .bg-white p {
+        font-size: 10px;
+    }
+
+    .list-portfolio {
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 85px;
+        margin-bottom: 40px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .bg-white h4 {
+        font-size: 18px;
+    }
+
+    .bg-white p {
+        font-size: 13px;
+    }
+
+    .list-icon img {
+        width: 50%;
+    }
+
+    .list-portfolio {
+        width: 50%;
+    }
+}
+
+// Средние девайсы («таблетки», >= 768px)
+@media (max-width: 768px) {
+    h1 {
+        font-size: 90px;
+    }
+
+}
 

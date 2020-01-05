@@ -9,18 +9,24 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+        integrity="sha256-PZLhE6wwMbg4AB3d35ZdBF9HD/dI/y4RazA3iRDurss=" crossorigin="anonymous" />
+
+
 </head>
 
 <body>
     <section class="logo">
+        <div class="container">
             <img src="img/logo.png" alt="logo">
+        </div>
     </section>
+
     <section class="banner">
-            <h1>STRICT</h1>
-            <p class="line"><img src="img/Line.png" alt="line"></p>
-            <p class="banner-text">STRICT is a responsive theme with a a clean and minimal look.</p>
-            <button class="button">Call to action</button>
+        <h1>STRICT</h1>
+        <p class="line"><img src="img/Line.png" alt="line"></p>
+        <p class="banner-text">STRICT is a responsive theme with a a clean and minimal look.</p>
+        <button class="button">Call to action</button>
     </section>
 
     <section class="bg-light-grey">
@@ -33,6 +39,7 @@
                 design.</p>
         </div>
     </section>
+
     <section>
         <div class="container">
             <div class="bg-white ">
@@ -54,63 +61,73 @@
             </div>
         </div>
     </section>
+
     <section class="bg-light-grey">
         <div class="container">
             <h2>Showcase your work like a pro.</h2>
             <p> Contact me if you like my work</p>
             <div class="portfolio">
-                <div class="list-portfolio">
-                    <img src="img/Image 01.png" alt="bicycle" class="img-1">
-                   
+                <div class="list-portfolio"> <a href="/img/img-1-large.jpg" target="_blank"
+                        data-effect="mfp-zoom-out"><img src="/img/Image 01.png" alt="bike on the street"></a>
                 </div>
                 <div class="list-portfolio">
-                    <img src="img/Image 02.png" alt="girl" class="img-2">
-                    
+
+                    <a href="/img/img-2-large.jpg" target="_blank" data-effect="mfp-zoom-out"><img
+                            src="/img/Image 02.png" alt="dance club"></a>
                 </div>
                 <div class="list-portfolio">
-                    <img src="img/Image 03.png" alt="smile" class="img-2">
-                    
+                    <a href="/img/smile-large.jpg" target="_blank" data-effect="mfp-zoom-out"><img
+                            src="/img/Image 03.png" alt="smile"></a>
                 </div>
                 <div class="list-portfolio">
-                    <img src="img/Image 04.png" alt="cup"class="img-3">
-              
+                    <a href="/img/img-4 large.jpg" target="_blank" data-effect="mfp-zoom-out"><img
+                            src="/img/Image 04.png" alt="tea-cup"></a>
                 </div>
                 <div class="list-portfolio">
-                    <img src="img/Image 05.png" alt="bicycle" class="img-4">
-                   
+                    <a href="/img/image5large.jpg" target="_blank" data-effect="mfp-zoom-out"><img
+                            src="/img/Image 05.png" alt="bicycle"></a>
                 </div>
                 <div class="list-portfolio">
-                    <img src="img/Image 06.png" alt="bicycle" class="img-5">
-                   
+                    <a href="/img/bicycle-1839005.jpg" target="_blank" data-effect="mfp-zoom-out"><img
+                            src="/img/Image 06.png"></a>
                 </div>
             </div>
-           
+        </div>
     </section>
+
     <section class="bg-grey">
         <div class="container">
             <h2>Stay with us</h2>
             <p>We ensure quailty & support</p>
             <form class="form" action="">
-                <input type="text" placeholder="Full name" required>
-                <input type="text" placeholder="Email Adress" required>
+                <input type="text" placeholder="Full Name" class="form-input" required>
+                <input type="text" placeholder="Email Adress" class="form-input" required>
                 <textarea name="" placeholder="Message"></textarea>
-                <button class="form-btn">Send</button>
+                <div class="form-btn-subscribe">
+                    <input type="checkbox" name="subscribe" id="subscribe-field" checked>
+                    <label for="subscribe-field">Subscribe Newsletter</label>
+                </div>
+                <input type="submit" value="Send" id="form-btn">
             </form>
         </div>
     </section>
+
     <section class="footer">
         <div class="container">
             <p>Copyritht 2014, STRICT</p>
             <div class="social-icon">
-                 <a href="#" class="facebook-icon"></a>
-                <a href="#" class="twitter-icon"></a>
-                <a href="#" class="google-icon"></a>
-                <a href="#" class="linked-icon"></a>
+                <a href="https://www.facebook.com/" class="facebook-icon" target="_blank"></a>
+                <a href="https://twitter.com/" class="twitter-icon" target="_blank"></a>
+                <a href="https://myaccount.google.com/" class="google-icon" target="_blank"></a>
+                <a href="https://ru.linkedin.com/" class="linked-icon" target="_blank"></a>
             </div>
         </div>
     </section>
-
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+        integrity="sha256-P93G0oq6PBPWTP1IR8Mz/0jHHUpaWL0aBJTKauisG7Q=" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
 
 </body>
 
