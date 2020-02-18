@@ -110,7 +110,9 @@ p {
 }
 
 .button:active {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+        transform: scale(0.8);
 }
 
 .logo,
@@ -160,9 +162,14 @@ textarea {
 
 .form {
     max-width: 548px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 54px;
     margin: auto;
     padding-bottom: 25px;
@@ -224,9 +231,16 @@ label {
 }
 
 .form-btn-subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     width: 50%;
 }
 
@@ -250,7 +264,9 @@ label {
 }
 
 #form-btn:active {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+        transform: scale(0.8);
 }
 
 .logo {
@@ -268,10 +284,17 @@ label {
 
 
 .portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border: #2d3950;
 }
 
@@ -320,8 +343,12 @@ label {
 }
 
 .bg-white {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 45px 20px 58px 20px;
 }
 
@@ -337,11 +364,17 @@ label {
 }
 
 .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .social-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
 }
@@ -361,7 +394,9 @@ label {
 }
 
 .facebook-icon:active {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+        transform: scale(0.8);
 }
 
 .facebook-icon:hover {
@@ -377,7 +412,9 @@ label {
 }
 
 .twitter-icon:active {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+        transform: scale(0.8);
 }
 
 .twitter-icon:hover {
@@ -396,7 +433,9 @@ label {
 }
 
 .google-icon:active {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+        transform: scale(0.8);
 }
 
 .linked-icon {
@@ -407,7 +446,9 @@ label {
 }
 
 .linked-icon:active {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+        transform: scale(0.8);
 }
 
 .linked-icon:hover {
