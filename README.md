@@ -4,8 +4,8 @@
 <ul>
 <li>HTML</li>
 <li>CSS </li>
-<li>JS: jQuery (Magnific Popup)</li>
-<li>Responsive & Adaptive layout (Media Query) https://dimsemenov.com/plugins/magnific-popup/</li>
+<li>JS: jQuery (Magnific Popup https://dimsemenov.com/plugins/magnific-popup/)</li>
+<li>Responsive & Adaptive layout (Media Query) </li>
 
 </ul>
 
