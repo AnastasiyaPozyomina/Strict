@@ -5,7 +5,7 @@
 <li>HTML</li>
 <li>CSS </li>
 <li>JS: jQuery (Magnific Popup)</li>
-<li>Responsive & Adaptive layout (Media Query)</li>
+<li>Responsive & Adaptive layout (Media Query) https://dimsemenov.com/plugins/magnific-popup/</li>
 
 </ul>
 
