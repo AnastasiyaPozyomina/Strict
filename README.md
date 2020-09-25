@@ -1,6 +1,8 @@
 <h1><a href="https://anastasiyapozyomina.github.io/Strict/">STRICT - 
  is a practical work to improve layout skills:</a></h1>
+<a href="https://anastasiyapozyomina.github.io/Strict/">demo</a>
 
+<h2>Used: </h2>
 <ul>
 <li>HTML</li>
 <li>CSS </li>
